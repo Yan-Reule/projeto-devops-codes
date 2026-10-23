@@ -1,0 +1,4 @@
+﻿replicas;cpu_solicitada;memoria_solicitada_MiB;limite_memoria_MiB;sucessos_por_s;falhas_pct;p95_latencia_ok_ms;dropped_iterations_medicao;execucoes_com_todas_metas
+1;0.5;64;128;1.45;75.9;785.25;0.0;0
+2;1.0;128;256;2.9167;51.52;620.07;0.0;0
+3;1.5;192;384;3.4;43.49;571.66;0.0;0

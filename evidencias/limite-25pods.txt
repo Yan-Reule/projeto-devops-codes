@@ -1,0 +1,26 @@
+NAME                    READY   STATUS    RESTARTS   AGE     IP            NODE      NOMINATED NODE   READINESS GATES
+rotas-fc7784c5c-4r8l4   1/1     Running   0          7m50s   10.244.0.31   ops-lab   <none>           <none>
+rotas-fc7784c5c-56q46   1/1     Running   0          7m50s   10.244.0.33   ops-lab   <none>           <none>
+rotas-fc7784c5c-5md5w   1/1     Running   0          20m     10.244.0.29   ops-lab   <none>           <none>
+rotas-fc7784c5c-5tm54   1/1     Running   0          7m50s   10.244.0.38   ops-lab   <none>           <none>
+rotas-fc7784c5c-6928j   1/1     Running   0          7m50s   10.244.0.43   ops-lab   <none>           <none>
+rotas-fc7784c5c-69jdd   1/1     Running   0          170m    10.244.0.6    ops-lab   <none>           <none>
+rotas-fc7784c5c-6cbx9   1/1     Running   0          20m     10.244.0.27   ops-lab   <none>           <none>
+rotas-fc7784c5c-975sb   1/1     Running   0          7m50s   10.244.0.40   ops-lab   <none>           <none>
+rotas-fc7784c5c-crs22   0/1     Pending   0          7m50s   <none>        <none>    <none>           <none>
+rotas-fc7784c5c-drfhn   0/1     Pending   0          7m50s   <none>        <none>    <none>           <none>
+rotas-fc7784c5c-dvnws   1/1     Running   0          7m50s   10.244.0.34   ops-lab   <none>           <none>
+rotas-fc7784c5c-f6kk7   1/1     Running   0          7m50s   10.244.0.30   ops-lab   <none>           <none>
+rotas-fc7784c5c-f7xhn   1/1     Running   0          23m     10.244.0.23   ops-lab   <none>           <none>
+rotas-fc7784c5c-h5kfd   1/1     Running   0          7m50s   10.244.0.45   ops-lab   <none>           <none>
+rotas-fc7784c5c-hzjxh   0/1     Pending   0          7m50s   <none>        <none>    <none>           <none>
+rotas-fc7784c5c-jhdhd   1/1     Running   0          7m50s   10.244.0.37   ops-lab   <none>           <none>
+rotas-fc7784c5c-nvcsw   1/1     Running   0          7m50s   10.244.0.42   ops-lab   <none>           <none>
+rotas-fc7784c5c-p4rxr   1/1     Running   0          7m50s   10.244.0.35   ops-lab   <none>           <none>
+rotas-fc7784c5c-pppqd   1/1     Running   0          20m     10.244.0.28   ops-lab   <none>           <none>
+rotas-fc7784c5c-ppsg5   1/1     Running   0          7m50s   10.244.0.44   ops-lab   <none>           <none>
+rotas-fc7784c5c-r6r82   1/1     Running   0          7m50s   10.244.0.36   ops-lab   <none>           <none>
+rotas-fc7784c5c-sznnz   1/1     Running   0          7m50s   10.244.0.41   ops-lab   <none>           <none>
+rotas-fc7784c5c-xz5vq   1/1     Running   0          22m     10.244.0.25   ops-lab   <none>           <none>
+rotas-fc7784c5c-zb7ct   1/1     Running   0          7m50s   10.244.0.32   ops-lab   <none>           <none>
+rotas-fc7784c5c-zn4rn   1/1     Running   0          7m50s   10.244.0.39   ops-lab   <none>           <none>

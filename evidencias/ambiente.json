@@ -1,0 +1,17 @@
+{
+  "sistema": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+  "cpu": "13th Gen Intel(R) Core(TM) i5-13420H",
+  "cpus_logicas": 12,
+  "memoria_total": "MemTotal:       15542620 kB",
+  "cluster": "ops-lab",
+  "kubernetes": "v1.37.0",
+  "minikube": "v1.39.0",
+  "docker": "29.1.3",
+  "limite_docker_cpus": 3,
+  "limite_docker_memoria_bytes": 3221225472,
+  "cpu_anunciada_kubernetes": 12,
+  "metrics_server_intervalo_segundos": 15,
+  "taxa": 6,
+  "paradas": 9,
+  "duracao_medida_segundos": 60
+}

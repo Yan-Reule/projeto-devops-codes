@@ -1,0 +1,8 @@
+NAME                    READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/rotas   1/1     1            1           3h46m
+
+NAME            TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)    AGE
+service/rotas   ClusterIP   10.101.199.148   <none>        8000/TCP   3h40m
+
+NAME                        READY   STATUS    RESTARTS   AGE
+pod/rotas-fc7784c5c-69jdd   1/1     Running   0          3h44m

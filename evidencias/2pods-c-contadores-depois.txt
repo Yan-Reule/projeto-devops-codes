@@ -1,0 +1,2 @@
+[pod/rotas-fc7784c5c-69jdd/rotas] aceito calculo_ms=471.9 total_aceitos=889 total_recusados=1739
+[pod/rotas-fc7784c5c-f7xhn/rotas] aceito calculo_ms=508.2 total_aceitos=94 total_recusados=134

@@ -1,0 +1,4 @@
+LAST SEEN   TYPE      REASON             OBJECT                      MESSAGE
+2m39s       Warning   FailedScheduling   pod/rotas-fc7784c5c-crs22   0/1 nodes are available: 1 Insufficient cpu. preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+2m39s       Warning   FailedScheduling   pod/rotas-fc7784c5c-drfhn   0/1 nodes are available: 1 Insufficient cpu. preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+2m39s       Warning   FailedScheduling   pod/rotas-fc7784c5c-hzjxh   0/1 nodes are available: 1 Insufficient cpu. preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.

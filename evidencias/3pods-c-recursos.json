@@ -1,0 +1,561 @@
+[
+  {
+    "observed_at": "2026-10-22T22:40:14.084765+00:00",
+    "metrics": {
+      "kind": "PodMetricsList",
+      "apiVersion": "metrics.k8s.io/v1beta1",
+      "metadata": {},
+      "items": [
+        {
+          "metadata": {
+            "name": "rotas-fc7784c5c-69jdd",
+            "namespace": "ops-lab",
+            "creationTimestamp": "2026-10-22T22:40:14Z",
+            "labels": {
+              "app": "rotas",
+              "pod-template-hash": "fc7784c5c"
+            }
+          },
+          "timestamp": "2026-10-22T22:39:58Z",
+          "window": "19.786s",
+          "containers": [
+            {
+              "name": "rotas",
+              "usage": {
+                "cpu": "346702264n",
+                "memory": "14080Ki"
+              }
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "name": "rotas-fc7784c5c-f7xhn",
+            "namespace": "ops-lab",
+            "creationTimestamp": "2026-10-22T22:40:14Z",
+            "labels": {
+              "app": "rotas",
+              "pod-template-hash": "fc7784c5c"
+            }
+          },
+          "timestamp": "2026-10-22T22:40:12Z",
+          "window": "29.11s",
+          "containers": [
+            {
+              "name": "rotas",
+              "usage": {
+                "cpu": "252542974n",
+                "memory": "16100Ki"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "observed_at": "2026-10-22T22:40:29.196068+00:00",
+    "metrics": {
+      "kind": "PodMetricsList",
+      "apiVersion": "metrics.k8s.io/v1beta1",
+      "metadata": {},
+      "items": [
+        {
+          "metadata": {
+            "name": "carga-m7vvx",
+            "namespace": "ops-lab",
+            "creationTimestamp": "2026-10-22T22:40:29Z",
+            "labels": {
+              "app": "gerador-carga",
+              "batch.kubernetes.io/controller-uid": "9a80f74c-6843-448c-883c-e9fe13b2ea50",
+              "batch.kubernetes.io/job-name": "carga",
+              "controller-uid": "9a80f74c-6843-448c-883c-e9fe13b2ea50",
+              "job-name": "carga"
+            }
+          },
+          "timestamp": "2026-10-22T22:40:27Z",
+          "window": "12.646224768s",
+          "containers": [
+            {
+              "name": "k6",
+              "usage": {
+                "cpu": "29638489n",
+                "memory": "19040Ki"
+              }
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "name": "rotas-fc7784c5c-69jdd",
+            "namespace": "ops-lab",
+            "creationTimestamp": "2026-10-22T22:40:29Z",
+            "labels": {
+              "app": "rotas",
+              "pod-template-hash": "fc7784c5c"
+            }
+          },
+          "timestamp": "2026-10-22T22:40:18Z",
+          "window": "19.649s",
+          "containers": [
+            {
+              "name": "rotas",
+              "usage": {
+                "cpu": "105993892n",
+                "memory": "14604Ki"
+              }
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "name": "rotas-fc7784c5c-f7xhn",
+            "namespace": "ops-lab",
+            "creationTimestamp": "2026-10-22T22:40:29Z",
+            "labels": {
+              "app": "rotas",
+              "pod-template-hash": "fc7784c5c"
+            }
+          },
+          "timestamp": "2026-10-22T22:40:27Z",
+          "window": "14.692s",
+          "containers": [
+            {
+              "name": "rotas",
+              "usage": {
+                "cpu": "227390348n",
+                "memory": "16096Ki"
+              }
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "name": "rotas-fc7784c5c-xz5vq",
+            "namespace": "ops-lab",
+            "creationTimestamp": "2026-10-22T22:40:29Z",
+            "labels": {
+              "app": "rotas",
+              "pod-template-hash": "fc7784c5c"
+            }
+          },
+          "timestamp": "2026-10-22T22:40:28Z",
+          "window": "15s",
+          "containers": [
+            {
+              "name": "rotas",
+              "usage": {
+                "cpu": "225014666n",
+                "memory": "14000Ki"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "observed_at": "2026-10-22T22:40:44.299373+00:00",
+    "metrics": {
+      "kind": "PodMetricsList",
+      "apiVersion": "metrics.k8s.io/v1beta1",
+      "metadata": {},
+      "items": [
+        {
+          "metadata": {
+            "name": "carga-m7vvx",
+            "namespace": "ops-lab",
+            "creationTimestamp": "2026-10-22T22:40:44Z",
+            "labels": {
+              "app": "gerador-carga",
+              "batch.kubernetes.io/controller-uid": "9a80f74c-6843-448c-883c-e9fe13b2ea50",
+              "batch.kubernetes.io/job-name": "carga",
+              "controller-uid": "9a80f74c-6843-448c-883c-e9fe13b2ea50",
+              "job-name": "carga"
+            }
+          },
+          "timestamp": "2026-10-22T22:40:42Z",
+          "window": "15.824s",
+          "containers": [
+            {
+              "name": "k6",
+              "usage": {
+                "cpu": "17773003n",
+                "memory": "20700Ki"
+              }
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "name": "rotas-fc7784c5c-69jdd",
+            "namespace": "ops-lab",
+            "creationTimestamp": "2026-10-22T22:40:44Z",
+            "labels": {
+              "app": "rotas",
+              "pod-template-hash": "fc7784c5c"
+            }
+          },
+          "timestamp": "2026-10-22T22:40:30Z",
+          "window": "12.581s",
+          "containers": [
+            {
+              "name": "rotas",
+              "usage": {
+                "cpu": "134444002n",
+                "memory": "14080Ki"
+              }
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "name": "rotas-fc7784c5c-f7xhn",
+            "namespace": "ops-lab",
+            "creationTimestamp": "2026-10-22T22:40:44Z",
+            "labels": {
+              "app": "rotas",
+              "pod-template-hash": "fc7784c5c"
+            }
+          },
+          "timestamp": "2026-10-22T22:40:39Z",
+          "window": "11.823s",
+          "containers": [
+            {
+              "name": "rotas",
+              "usage": {
+                "cpu": "127644337n",
+                "memory": "16096Ki"
+              }
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "name": "rotas-fc7784c5c-xz5vq",
+            "namespace": "ops-lab",
+            "creationTimestamp": "2026-10-22T22:40:44Z",
+            "labels": {
+              "app": "rotas",
+              "pod-template-hash": "fc7784c5c"
+            }
+          },
+          "timestamp": "2026-10-22T22:40:42Z",
+          "window": "13.814s",
+          "containers": [
+            {
+              "name": "rotas",
+              "usage": {
+                "cpu": "136782684n",
+                "memory": "14032Ki"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "observed_at": "2026-10-22T22:40:59.373479+00:00",
+    "metrics": {
+      "kind": "PodMetricsList",
+      "apiVersion": "metrics.k8s.io/v1beta1",
+      "metadata": {},
+      "items": [
+        {
+          "metadata": {
+            "name": "carga-m7vvx",
+            "namespace": "ops-lab",
+            "creationTimestamp": "2026-10-22T22:40:59Z",
+            "labels": {
+              "app": "gerador-carga",
+              "batch.kubernetes.io/controller-uid": "9a80f74c-6843-448c-883c-e9fe13b2ea50",
+              "batch.kubernetes.io/job-name": "carga",
+              "controller-uid": "9a80f74c-6843-448c-883c-e9fe13b2ea50",
+              "job-name": "carga"
+            }
+          },
+          "timestamp": "2026-10-22T22:40:42Z",
+          "window": "15.824s",
+          "containers": [
+            {
+              "name": "k6",
+              "usage": {
+                "cpu": "17773003n",
+                "memory": "20700Ki"
+              }
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "name": "rotas-fc7784c5c-69jdd",
+            "namespace": "ops-lab",
+            "creationTimestamp": "2026-10-22T22:40:59Z",
+            "labels": {
+              "app": "rotas",
+              "pod-template-hash": "fc7784c5c"
+            }
+          },
+          "timestamp": "2026-10-22T22:40:50Z",
+          "window": "19.317s",
+          "containers": [
+            {
+              "name": "rotas",
+              "usage": {
+                "cpu": "278321582n",
+                "memory": "14900Ki"
+              }
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "name": "rotas-fc7784c5c-f7xhn",
+            "namespace": "ops-lab",
+            "creationTimestamp": "2026-10-22T22:40:59Z",
+            "labels": {
+              "app": "rotas",
+              "pod-template-hash": "fc7784c5c"
+            }
+          },
+          "timestamp": "2026-10-22T22:40:54Z",
+          "window": "15.802s",
+          "containers": [
+            {
+              "name": "rotas",
+              "usage": {
+                "cpu": "239081192n",
+                "memory": "16376Ki"
+              }
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "name": "rotas-fc7784c5c-xz5vq",
+            "namespace": "ops-lab",
+            "creationTimestamp": "2026-10-22T22:40:59Z",
+            "labels": {
+              "app": "rotas",
+              "pod-template-hash": "fc7784c5c"
+            }
+          },
+          "timestamp": "2026-10-22T22:40:57Z",
+          "window": "14.827s",
+          "containers": [
+            {
+              "name": "rotas",
+              "usage": {
+                "cpu": "261148108n",
+                "memory": "14560Ki"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "observed_at": "2026-10-22T22:41:14.452806+00:00",
+    "metrics": {
+      "kind": "PodMetricsList",
+      "apiVersion": "metrics.k8s.io/v1beta1",
+      "metadata": {},
+      "items": [
+        {
+          "metadata": {
+            "name": "carga-m7vvx",
+            "namespace": "ops-lab",
+            "creationTimestamp": "2026-10-22T22:41:14Z",
+            "labels": {
+              "app": "gerador-carga",
+              "batch.kubernetes.io/controller-uid": "9a80f74c-6843-448c-883c-e9fe13b2ea50",
+              "batch.kubernetes.io/job-name": "carga",
+              "controller-uid": "9a80f74c-6843-448c-883c-e9fe13b2ea50",
+              "job-name": "carga"
+            }
+          },
+          "timestamp": "2026-10-22T22:41:01Z",
+          "window": "18.161s",
+          "containers": [
+            {
+              "name": "k6",
+              "usage": {
+                "cpu": "16312978n",
+                "memory": "21896Ki"
+              }
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "name": "rotas-fc7784c5c-69jdd",
+            "namespace": "ops-lab",
+            "creationTimestamp": "2026-10-22T22:41:14Z",
+            "labels": {
+              "app": "rotas",
+              "pod-template-hash": "fc7784c5c"
+            }
+          },
+          "timestamp": "2026-10-22T22:41:09Z",
+          "window": "19.231s",
+          "containers": [
+            {
+              "name": "rotas",
+              "usage": {
+                "cpu": "275205241n",
+                "memory": "14080Ki"
+              }
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "name": "rotas-fc7784c5c-f7xhn",
+            "namespace": "ops-lab",
+            "creationTimestamp": "2026-10-22T22:41:14Z",
+            "labels": {
+              "app": "rotas",
+              "pod-template-hash": "fc7784c5c"
+            }
+          },
+          "timestamp": "2026-10-22T22:41:12Z",
+          "window": "17.575s",
+          "containers": [
+            {
+              "name": "rotas",
+              "usage": {
+                "cpu": "305127738n",
+                "memory": "16096Ki"
+              }
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "name": "rotas-fc7784c5c-xz5vq",
+            "namespace": "ops-lab",
+            "creationTimestamp": "2026-10-22T22:41:14Z",
+            "labels": {
+              "app": "rotas",
+              "pod-template-hash": "fc7784c5c"
+            }
+          },
+          "timestamp": "2026-10-22T22:40:57Z",
+          "window": "14.827s",
+          "containers": [
+            {
+              "name": "rotas",
+              "usage": {
+                "cpu": "261148108n",
+                "memory": "14560Ki"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "observed_at": "2026-10-22T22:41:29.541186+00:00",
+    "metrics": {
+      "kind": "PodMetricsList",
+      "apiVersion": "metrics.k8s.io/v1beta1",
+      "metadata": {},
+      "items": [
+        {
+          "metadata": {
+            "name": "carga-m7vvx",
+            "namespace": "ops-lab",
+            "creationTimestamp": "2026-10-22T22:41:29Z",
+            "labels": {
+              "app": "gerador-carga",
+              "batch.kubernetes.io/controller-uid": "9a80f74c-6843-448c-883c-e9fe13b2ea50",
+              "batch.kubernetes.io/job-name": "carga",
+              "controller-uid": "9a80f74c-6843-448c-883c-e9fe13b2ea50",
+              "job-name": "carga"
+            }
+          },
+          "timestamp": "2026-10-22T22:41:20Z",
+          "window": "19.559s",
+          "containers": [
+            {
+              "name": "k6",
+              "usage": {
+                "cpu": "19758372n",
+                "memory": "22672Ki"
+              }
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "name": "rotas-fc7784c5c-69jdd",
+            "namespace": "ops-lab",
+            "creationTimestamp": "2026-10-22T22:41:29Z",
+            "labels": {
+              "app": "rotas",
+              "pod-template-hash": "fc7784c5c"
+            }
+          },
+          "timestamp": "2026-10-22T22:41:22Z",
+          "window": "12.694s",
+          "containers": [
+            {
+              "name": "rotas",
+              "usage": {
+                "cpu": "297193949n",
+                "memory": "14596Ki"
+              }
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "name": "rotas-fc7784c5c-f7xhn",
+            "namespace": "ops-lab",
+            "creationTimestamp": "2026-10-22T22:41:29Z",
+            "labels": {
+              "app": "rotas",
+              "pod-template-hash": "fc7784c5c"
+            }
+          },
+          "timestamp": "2026-10-22T22:41:28Z",
+          "window": "16.272s",
+          "containers": [
+            {
+              "name": "rotas",
+              "usage": {
+                "cpu": "310931231n",
+                "memory": "16864Ki"
+              }
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "name": "rotas-fc7784c5c-xz5vq",
+            "namespace": "ops-lab",
+            "creationTimestamp": "2026-10-22T22:41:29Z",
+            "labels": {
+              "app": "rotas",
+              "pod-template-hash": "fc7784c5c"
+            }
+          },
+          "timestamp": "2026-10-22T22:41:15Z",
+          "window": "17.933s",
+          "containers": [
+            {
+              "name": "rotas",
+              "usage": {
+                "cpu": "283824123n",
+                "memory": "14036Ki"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

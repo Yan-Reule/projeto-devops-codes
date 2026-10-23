@@ -1,0 +1,7 @@
+NAME                    READY   STATUS    RESTARTS   AGE     IP            NODE      NOMINATED NODE   READINESS GATES
+rotas-fc7784c5c-5md5w   1/1     Running   0          7s      10.244.0.29   ops-lab   <none>           <none>
+rotas-fc7784c5c-69jdd   1/1     Running   0          150m    10.244.0.6    ops-lab   <none>           <none>
+rotas-fc7784c5c-6cbx9   1/1     Running   0          7s      10.244.0.27   ops-lab   <none>           <none>
+rotas-fc7784c5c-f7xhn   1/1     Running   0          3m28s   10.244.0.23   ops-lab   <none>           <none>
+rotas-fc7784c5c-pppqd   1/1     Running   0          7s      10.244.0.28   ops-lab   <none>           <none>
+rotas-fc7784c5c-xz5vq   1/1     Running   0          111s    10.244.0.25   ops-lab   <none>           <none>

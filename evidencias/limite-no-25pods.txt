@@ -1,0 +1,103 @@
+Name:               ops-lab
+Roles:              control-plane
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/os=linux
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=ops-lab
+                    kubernetes.io/os=linux
+                    minikube.k8s.io/commit=7a9f6a841470a207de8cf4bafcccee0969d8ba10
+                    minikube.k8s.io/name=ops-lab
+                    minikube.k8s.io/primary=true
+                    minikube.k8s.io/updated_at=2026_10_22T16_57_35_0700
+                    minikube.k8s.io/version=v1.39.0
+                    node-role.kubernetes.io/control-plane=
+                    node.kubernetes.io/exclude-from-external-load-balancers=
+Annotations:        node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Thu, 22 Oct 2026 16:57:30 -0300
+Taints:             <none>
+Unschedulable:      false
+Lease:
+  HolderIdentity:  ops-lab
+  AcquireTime:     <unset>
+  RenewTime:       Thu, 22 Oct 2026 20:02:10 -0300
+Conditions:
+  Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----             ------  -----------------                 ------------------                ------                       -------
+  MemoryPressure   False   Thu, 22 Oct 2026 20:00:15 -0300   Thu, 22 Oct 2026 16:57:29 -0300   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Thu, 22 Oct 2026 20:00:15 -0300   Thu, 22 Oct 2026 16:57:29 -0300   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Thu, 22 Oct 2026 20:00:15 -0300   Thu, 22 Oct 2026 16:57:29 -0300   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Thu, 22 Oct 2026 20:00:15 -0300   Thu, 22 Oct 2026 16:58:00 -0300   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:  192.168.58.2
+  Hostname:    ops-lab
+Capacity:
+  cpu:                12
+  ephemeral-storage:  501809635328
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             15542620Ki
+  pods:               110
+Allocatable:
+  cpu:                12
+  ephemeral-storage:  501809635328
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             15542620Ki
+  pods:               110
+System Info:
+  Machine ID:                 b7566eefbea02b7ce85821e86a97158b
+  System UUID:                5e0ecae3-46ad-4819-824e-a84b44584912
+  Boot ID:                    e8106209-ceff-4dd5-9aa6-b102741e7904
+  Kernel Version:             7.0.0-38-generic
+  OS Image:                   Debian GNU/Linux 12 (bookworm)
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  containerd://2.3.4
+  Kubelet Version:            v1.37.0
+PodCIDR:                      10.244.0.0/24
+PodCIDRs:                     10.244.0.0/24
+Non-terminated Pods:          (31 in total)
+  Namespace                   Name                               CPU Requests  CPU Limits  Memory Requests  Memory Limits  Age
+  ---------                   ----                               ------------  ----------  ---------------  -------------  ---
+  kube-system                 coredns-559f6c778d-9kx6x           100m (0%)     0 (0%)      70Mi (0%)        170Mi (1%)     3h4m
+  kube-system                 etcd-ops-lab                       100m (0%)     0 (0%)      100Mi (0%)       0 (0%)         3h4m
+  kube-system                 kindnet-tlxls                      100m (0%)     100m (0%)   50Mi (0%)        50Mi (0%)      3h4m
+  kube-system                 kube-apiserver-ops-lab             250m (2%)     0 (0%)      0 (0%)           0 (0%)         3h4m
+  kube-system                 kube-controller-manager-ops-lab    200m (1%)     0 (0%)      0 (0%)           0 (0%)         3h4m
+  kube-system                 kube-proxy-nqs4k                   0 (0%)        0 (0%)      0 (0%)           0 (0%)         3h4m
+  kube-system                 kube-scheduler-ops-lab             100m (0%)     0 (0%)      0 (0%)           0 (0%)         3h4m
+  kube-system                 metrics-server-68d54596b7-q9q9v    100m (0%)     0 (0%)      200Mi (1%)       0 (0%)         39m
+  kube-system                 storage-provisioner                0 (0%)        0 (0%)      0 (0%)           0 (0%)         3h4m
+  ops-lab                     rotas-fc7784c5c-4r8l4              500m (4%)     500m (4%)   64Mi (0%)        128Mi (0%)     7m50s
+  ops-lab                     rotas-fc7784c5c-56q46              500m (4%)     500m (4%)   64Mi (0%)        128Mi (0%)     7m50s
+  ops-lab                     rotas-fc7784c5c-5md5w              500m (4%)     500m (4%)   64Mi (0%)        128Mi (0%)     20m
+  ops-lab                     rotas-fc7784c5c-5tm54              500m (4%)     500m (4%)   64Mi (0%)        128Mi (0%)     7m50s
+  ops-lab                     rotas-fc7784c5c-6928j              500m (4%)     500m (4%)   64Mi (0%)        128Mi (0%)     7m50s
+  ops-lab                     rotas-fc7784c5c-69jdd              500m (4%)     500m (4%)   64Mi (0%)        128Mi (0%)     170m
+  ops-lab                     rotas-fc7784c5c-6cbx9              500m (4%)     500m (4%)   64Mi (0%)        128Mi (0%)     20m
+  ops-lab                     rotas-fc7784c5c-975sb              500m (4%)     500m (4%)   64Mi (0%)        128Mi (0%)     7m50s
+  ops-lab                     rotas-fc7784c5c-dvnws              500m (4%)     500m (4%)   64Mi (0%)        128Mi (0%)     7m50s
+  ops-lab                     rotas-fc7784c5c-f6kk7              500m (4%)     500m (4%)   64Mi (0%)        128Mi (0%)     7m50s
+  ops-lab                     rotas-fc7784c5c-f7xhn              500m (4%)     500m (4%)   64Mi (0%)        128Mi (0%)     23m
+  ops-lab                     rotas-fc7784c5c-h5kfd              500m (4%)     500m (4%)   64Mi (0%)        128Mi (0%)     7m50s
+  ops-lab                     rotas-fc7784c5c-jhdhd              500m (4%)     500m (4%)   64Mi (0%)        128Mi (0%)     7m50s
+  ops-lab                     rotas-fc7784c5c-nvcsw              500m (4%)     500m (4%)   64Mi (0%)        128Mi (0%)     7m50s
+  ops-lab                     rotas-fc7784c5c-p4rxr              500m (4%)     500m (4%)   64Mi (0%)        128Mi (0%)     7m50s
+  ops-lab                     rotas-fc7784c5c-pppqd              500m (4%)     500m (4%)   64Mi (0%)        128Mi (0%)     20m
+  ops-lab                     rotas-fc7784c5c-ppsg5              500m (4%)     500m (4%)   64Mi (0%)        128Mi (0%)     7m50s
+  ops-lab                     rotas-fc7784c5c-r6r82              500m (4%)     500m (4%)   64Mi (0%)        128Mi (0%)     7m50s
+  ops-lab                     rotas-fc7784c5c-sznnz              500m (4%)     500m (4%)   64Mi (0%)        128Mi (0%)     7m50s
+  ops-lab                     rotas-fc7784c5c-xz5vq              500m (4%)     500m (4%)   64Mi (0%)        128Mi (0%)     22m
+  ops-lab                     rotas-fc7784c5c-zb7ct              500m (4%)     500m (4%)   64Mi (0%)        128Mi (0%)     7m50s
+  ops-lab                     rotas-fc7784c5c-zn4rn              500m (4%)     500m (4%)   64Mi (0%)        128Mi (0%)     7m50s
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests      Limits
+  --------           --------      ------
+  cpu                11950m (99%)  11100m (92%)
+  memory             1828Mi (12%)  3036Mi (20%)
+  ephemeral-storage  0 (0%)        0 (0%)
+  hugepages-1Gi      0 (0%)        0 (0%)
+  hugepages-2Mi      0 (0%)        0 (0%)
+Events:              <none>

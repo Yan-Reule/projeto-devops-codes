@@ -1,0 +1,9 @@
+2026-10-22T20:24:43Z
+NAME                    CPU(cores)   MEMORY(bytes)   
+rotas-fc7784c5c-69jdd   7m           14Mi            
+2026-10-22T20:24:58Z
+NAME                    CPU(cores)   MEMORY(bytes)   
+rotas-fc7784c5c-69jdd   7m           14Mi            
+2026-10-22T20:25:13Z
+NAME                    CPU(cores)   MEMORY(bytes)   
+rotas-fc7784c5c-69jdd   7m           14Mi            

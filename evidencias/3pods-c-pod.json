@@ -1,0 +1,294 @@
+{
+  "apiVersion": "v1",
+  "items": [
+    {
+      "apiVersion": "v1",
+      "kind": "Pod",
+      "metadata": {
+        "creationTimestamp": "2026-10-22T22:40:14Z",
+        "generateName": "carga-",
+        "generation": 1,
+        "labels": {
+          "app": "gerador-carga",
+          "batch.kubernetes.io/controller-uid": "9a80f74c-6843-448c-883c-e9fe13b2ea50",
+          "batch.kubernetes.io/job-name": "carga",
+          "controller-uid": "9a80f74c-6843-448c-883c-e9fe13b2ea50",
+          "job-name": "carga"
+        },
+        "name": "carga-m7vvx",
+        "namespace": "ops-lab",
+        "ownerReferences": [
+          {
+            "apiVersion": "batch/v1",
+            "blockOwnerDeletion": true,
+            "controller": true,
+            "kind": "Job",
+            "name": "carga",
+            "uid": "9a80f74c-6843-448c-883c-e9fe13b2ea50"
+          }
+        ],
+        "resourceVersion": "7803",
+        "uid": "1f1c04e3-096b-4aa4-bea8-49bea8580ff0"
+      },
+      "spec": {
+        "containers": [
+          {
+            "command": [
+              "k6",
+              "run",
+              "/scripts/carga.js"
+            ],
+            "env": [
+              {
+                "name": "TAXA",
+                "value": "6"
+              },
+              {
+                "name": "PARADAS",
+                "value": "9"
+              },
+              {
+                "name": "DURACAO",
+                "value": "60"
+              }
+            ],
+            "image": "grafana/k6:1.0.0",
+            "imagePullPolicy": "IfNotPresent",
+            "name": "k6",
+            "resources": {
+              "limits": {
+                "cpu": "500m",
+                "memory": "256Mi"
+              },
+              "requests": {
+                "cpu": "250m",
+                "memory": "128Mi"
+              }
+            },
+            "terminationMessagePath": "/dev/termination-log",
+            "terminationMessagePolicy": "File",
+            "volumeMounts": [
+              {
+                "mountPath": "/scripts",
+                "name": "script",
+                "readOnly": true
+              },
+              {
+                "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount",
+                "name": "kube-api-access-v4xq8",
+                "readOnly": true
+              }
+            ]
+          }
+        ],
+        "dnsPolicy": "ClusterFirst",
+        "enableServiceLinks": true,
+        "nodeName": "ops-lab",
+        "preemptionPolicy": "PreemptLowerPriority",
+        "priority": 0,
+        "restartPolicy": "Never",
+        "schedulerName": "default-scheduler",
+        "securityContext": {},
+        "serviceAccount": "default",
+        "serviceAccountName": "default",
+        "terminationGracePeriodSeconds": 30,
+        "tolerations": [
+          {
+            "effect": "NoExecute",
+            "key": "node.kubernetes.io/not-ready",
+            "operator": "Exists",
+            "tolerationSeconds": 300
+          },
+          {
+            "effect": "NoExecute",
+            "key": "node.kubernetes.io/unreachable",
+            "operator": "Exists",
+            "tolerationSeconds": 300
+          }
+        ],
+        "volumes": [
+          {
+            "configMap": {
+              "defaultMode": 420,
+              "name": "carga-script"
+            },
+            "name": "script"
+          },
+          {
+            "name": "kube-api-access-v4xq8",
+            "projected": {
+              "defaultMode": 420,
+              "sources": [
+                {
+                  "serviceAccountToken": {
+                    "expirationSeconds": 3607,
+                    "path": "token"
+                  }
+                },
+                {
+                  "configMap": {
+                    "items": [
+                      {
+                        "key": "ca.crt",
+                        "path": "ca.crt"
+                      }
+                    ],
+                    "name": "kube-root-ca.crt"
+                  }
+                },
+                {
+                  "downwardAPI": {
+                    "items": [
+                      {
+                        "fieldRef": {
+                          "apiVersion": "v1",
+                          "fieldPath": "metadata.namespace"
+                        },
+                        "path": "namespace"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "status": {
+        "allocatedResources": {
+          "cpu": "250m",
+          "memory": "128Mi"
+        },
+        "conditions": [
+          {
+            "lastProbeTime": null,
+            "lastTransitionTime": "2026-10-22T22:41:37Z",
+            "message": "pod sandbox is not ready",
+            "observedGeneration": 1,
+            "reason": "PodSandboxNotReady",
+            "status": "False",
+            "type": "PodReadyToStartContainers"
+          },
+          {
+            "lastProbeTime": null,
+            "lastTransitionTime": "2026-10-22T22:40:14Z",
+            "observedGeneration": 1,
+            "status": "True",
+            "type": "Initialized"
+          },
+          {
+            "lastProbeTime": null,
+            "lastTransitionTime": "2026-10-22T22:41:35Z",
+            "observedGeneration": 1,
+            "reason": "PodFailed",
+            "status": "False",
+            "type": "Ready"
+          },
+          {
+            "lastProbeTime": null,
+            "lastTransitionTime": "2026-10-22T22:41:35Z",
+            "observedGeneration": 1,
+            "reason": "PodFailed",
+            "status": "False",
+            "type": "ContainersReady"
+          },
+          {
+            "lastProbeTime": null,
+            "lastTransitionTime": "2026-10-22T22:40:14Z",
+            "observedGeneration": 1,
+            "status": "True",
+            "type": "PodScheduled"
+          }
+        ],
+        "containerStatuses": [
+          {
+            "allocatedResources": {
+              "cpu": "250m",
+              "memory": "128Mi"
+            },
+            "containerID": "containerd://842e53f971594df6c163a86216c5a7f8386d051a15b1657d2c9b86fa82ef990b",
+            "image": "docker.io/grafana/k6:1.0.0",
+            "imageID": "docker.io/grafana/k6@sha256:f21270290d702cbf0a7d6ba5d7ed100b63bcb233b558b885ed787547b3488279",
+            "lastState": {},
+            "name": "k6",
+            "ready": false,
+            "resources": {
+              "limits": {
+                "cpu": "500m",
+                "memory": "256Mi"
+              },
+              "requests": {
+                "cpu": "250m",
+                "memory": "128Mi"
+              }
+            },
+            "restartCount": 0,
+            "started": false,
+            "state": {
+              "terminated": {
+                "containerID": "containerd://842e53f971594df6c163a86216c5a7f8386d051a15b1657d2c9b86fa82ef990b",
+                "exitCode": 99,
+                "finishedAt": "2026-10-22T22:41:35Z",
+                "reason": "Error",
+                "startedAt": "2026-10-22T22:40:14Z"
+              }
+            },
+            "user": {
+              "linux": {
+                "gid": 12345,
+                "supplementalGroups": [
+                  12345
+                ],
+                "uid": 12345
+              }
+            },
+            "volumeMounts": [
+              {
+                "mountPath": "/scripts",
+                "name": "script",
+                "readOnly": true,
+                "recursiveReadOnly": "Disabled"
+              },
+              {
+                "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount",
+                "name": "kube-api-access-v4xq8",
+                "readOnly": true,
+                "recursiveReadOnly": "Disabled"
+              }
+            ]
+          }
+        ],
+        "hostIP": "192.168.58.2",
+        "hostIPs": [
+          {
+            "ip": "192.168.58.2"
+          }
+        ],
+        "observedGeneration": 1,
+        "phase": "Failed",
+        "podIP": "10.244.0.26",
+        "podIPs": [
+          {
+            "ip": "10.244.0.26"
+          }
+        ],
+        "qosClass": "Burstable",
+        "resources": {
+          "limits": {
+            "cpu": "500m",
+            "memory": "256Mi"
+          },
+          "requests": {
+            "cpu": "232m",
+            "memory": "128Mi"
+          }
+        },
+        "startTime": "2026-10-22T22:40:14Z"
+      }
+    }
+  ],
+  "kind": "List",
+  "metadata": {
+    "resourceVersion": ""
+  }
+}

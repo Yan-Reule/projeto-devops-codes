@@ -1,0 +1,100 @@
+{
+  "apiVersion": "v1",
+  "items": [
+    {
+      "addressType": "IPv4",
+      "apiVersion": "discovery.k8s.io/v1",
+      "endpoints": [
+        {
+          "addresses": [
+            "10.244.0.6"
+          ],
+          "conditions": {
+            "ready": true,
+            "serving": true,
+            "terminating": false
+          },
+          "nodeName": "ops-lab",
+          "targetRef": {
+            "kind": "Pod",
+            "name": "rotas-fc7784c5c-69jdd",
+            "namespace": "ops-lab",
+            "uid": "c0b7befd-9f4f-4556-999a-a1b8320d68de"
+          }
+        },
+        {
+          "addresses": [
+            "10.244.0.16"
+          ],
+          "conditions": {
+            "ready": true,
+            "serving": true,
+            "terminating": false
+          },
+          "nodeName": "ops-lab",
+          "targetRef": {
+            "kind": "Pod",
+            "name": "rotas-fc7784c5c-sz9nq",
+            "namespace": "ops-lab",
+            "uid": "6529ba26-8a46-4526-9c45-75a8f863f5c9"
+          }
+        },
+        {
+          "addresses": [
+            "10.244.0.19"
+          ],
+          "conditions": {
+            "ready": true,
+            "serving": true,
+            "terminating": false
+          },
+          "nodeName": "ops-lab",
+          "targetRef": {
+            "kind": "Pod",
+            "name": "rotas-fc7784c5c-44grc",
+            "namespace": "ops-lab",
+            "uid": "078d434e-86fa-4394-9630-9102987507b8"
+          }
+        }
+      ],
+      "kind": "EndpointSlice",
+      "metadata": {
+        "annotations": {
+          "endpoints.kubernetes.io/last-change-trigger-time": "2026-10-22T22:33:30Z"
+        },
+        "creationTimestamp": "2026-10-22T20:16:07Z",
+        "generateName": "rotas-",
+        "generation": 15,
+        "labels": {
+          "endpointslice.kubernetes.io/managed-by": "endpointslice-controller.k8s.io",
+          "kubernetes.io/service-name": "rotas"
+        },
+        "name": "rotas-fr5zh",
+        "namespace": "ops-lab",
+        "ownerReferences": [
+          {
+            "apiVersion": "v1",
+            "blockOwnerDeletion": true,
+            "controller": true,
+            "kind": "Service",
+            "name": "rotas",
+            "uid": "18d0972e-9758-478b-8366-a1836a429bab"
+          }
+        ],
+        "resourceVersion": "7158",
+        "uid": "1dc541e2-cb53-4f4d-86c4-e2d13d391d47"
+      },
+      "ports": [
+        {
+          "name": "",
+          "port": 8000,
+          "protocol": "TCP"
+        }
+      ]
+    }
+  ],
+  "kind": "List",
+  "metadata": {
+    "resourceVersion": ""
+  }
+}
